@@ -1,2 +1,2 @@
 # Password_generator_and_password_checker
-generate and check password strength
+Python based basic CLI password generator, checker and manager.
