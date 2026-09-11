@@ -59,3 +59,7 @@ The executable will be created in the `dist/` folder (`main.exe` on Windows, `ma
 
  Encrypt saved service passwords (e.g. using `cryptography`'s Fernet)
  Limit master password attempts with lockout/delay
+
+ ## Coming Updates
+ 1. **hash service password list**
+ 2. **Turn into a GUI program with cross compatibility with windows, Linux, macOS and Android**
