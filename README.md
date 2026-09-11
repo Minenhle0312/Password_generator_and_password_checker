@@ -57,5 +57,5 @@ The executable will be created in the `dist/` folder (`main.exe` on Windows, `ma
 
 ## Roadmap
 
-- [ ] Encrypt saved service passwords (e.g. using `cryptography`'s Fernet)
-- [ ] Limit master password attempts with lockout/delay
+ Encrypt saved service passwords (e.g. using `cryptography`'s Fernet)
+ Limit master password attempts with lockout/delay
