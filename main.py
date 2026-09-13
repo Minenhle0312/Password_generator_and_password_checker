@@ -1,4 +1,4 @@
-import random as rm
+import secrets
 import json
 import sys
 import os
@@ -96,7 +96,7 @@ def password_generator():
     length = int(input("Input required password length: "))
     password = ""
     for i in range(length):
-        random_character = rm.choice(characters)
+        random_character = secrets.choice(characters)
         password = password + random_character
     print("Generated password: ", password)
     return password
