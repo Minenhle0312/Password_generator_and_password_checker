@@ -1,0 +1,18 @@
+# Password manager data
+passwords.json
+master.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE
+.idea/
+
+# Build files
+build/
+dist/
+
+# PyInstaller
+*.spec
