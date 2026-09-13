@@ -11,7 +11,7 @@ A command-line password tool built in Python. Checks password strength, generate
 
 ## Requirements
 
-- Python 3.x (no external libraries — uses only the standard library: `random`, `json`, `os`, `sys`, `hashlib`)
+- Python 3.x (no external libraries — uses only the standard library: `secret`, `json`, `os`, `sys`, `hashlib`,`getpass`)
 
 ## Running from source
 
