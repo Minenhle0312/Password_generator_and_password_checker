@@ -3,6 +3,7 @@ import json
 import sys
 import os
 import hashlib
+from getpass import getpass
 
 if getattr(sys, 'frozen', False):
     # Running as a PyInstaller exe
@@ -17,7 +18,7 @@ FILENAME = os.path.join(APP_DIR, "passwords.json")
 #create master password
 #----------------------------------------------------------
 def setup_master_password():
-    master_password = input("Enter your master passsword: ")
+    master_password = getpass("Enter your master passsword: ")
     password_bytes = master_password.encode()
     salt = os.urandom(16)
     hashed_password = hashlib.pbkdf2_hmac(hash_name="sha256", password=password_bytes, salt=salt, iterations=100000, dklen=None)
@@ -36,7 +37,7 @@ def verify_master_password():
     master_data = load_data("master.json")
     stored_hash = bytes.fromhex(master_data["hash"])
     salt = bytes.fromhex(master_data["salt"])
-    master_password = input("Enter your master password to open the password manager: ")
+    master_password = getpass("Enter your master password to open the password manager: ")
     password_bytes = master_password.encode()
     hashed_password = hashlib.pbkdf2_hmac(hash_name="sha256", password=password_bytes, salt=salt, iterations=100000, dklen=None)
 
